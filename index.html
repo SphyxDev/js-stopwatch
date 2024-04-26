@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stopwatch</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <script src="index.js" defer></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+
+        <section class="container">
+            <h1>stopwatch.</h1>
+            <div id="stopwatch">
+                <div>
+                    <div id="counter">
+                        <span id="counterHours">00</span>
+                        :
+                        <span id="counterMinutes">00</span>
+                        :
+                        <span id="counterSeconds">00</span>
+                        .
+                        <span id="counterMilliseconds">000</span>
+                    </div>
+                    <div class="buttonContainer">
+                        <button id="playBtn" class="uiButton" title="Start/Pause"></button>
+                        <button id="splitBtn" class="uiButton" title="Split" disabled></button>
+                        <button id="resetBtn" class="uiButton" title="Reset"></button>
+                    </div>
+                </div>
+            </div>
+            <div id="splitsContainer">
+                <span id="splitsHeader"><strong>Splits:</strong>
+                    <hr>
+                </span>
+                <div id="splits">Your splits will show here.</div>
+            </div>
+        </section>
+    </body>
+
+</html>
